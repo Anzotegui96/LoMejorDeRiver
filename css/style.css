@@ -54,3 +54,25 @@
     margin: 20px 0;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white; /* o #fff */
+    z-index: 1000;
+    padding: 10px;
+  }
+  
+  body {
+    padding-top: 60px; /* deja espacio para el nav fijo */
+  }
+
+  nav a {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  

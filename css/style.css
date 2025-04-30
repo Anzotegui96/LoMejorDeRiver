@@ -1,7 +1,6 @@
 .fondo {
     position: relative;
     background: #ffffff;
-    overflow-x: hidden;
     padding: 20px;
   }
   
@@ -77,10 +76,6 @@
     color: black;
   }
 
-  .title {
-    padding: 20px;
-  }
-
   .banner-textual {
     /*background-image: url('../img/banner1.jpg');*/
     padding: 40px 20px;
@@ -97,9 +92,9 @@
   
   #RadioEnVivo {
     background: #fafafa;
-    padding: 20px;
+    padding: 5px;
     border-radius: 12px;
-    margin: 40px auto;
+    margin: 40px left;
     max-width: 600px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: left;
@@ -116,6 +111,7 @@
     background: #fff;
     line-height: 1.6;
     font-size: 1rem;
+    overflow-x: hidden;
   }
   
   h1, h2, h3 {
@@ -149,4 +145,26 @@
     border-radius: 10px;
   }
   
-  
+  .container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-item {
+    flex: 1 1 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+  @media (min-width: 768px) {
+    .flex-item {
+      flex: 1 1 50%; /* Ocupa la mitad del ancho en pantallas medianas o grandes */
+    }
+  }
+    

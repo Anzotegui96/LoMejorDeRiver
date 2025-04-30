@@ -6,9 +6,12 @@
     <title>Lo Mejor de River</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/logoedit.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body class="fondo">
+  <div class="banda-parallax"></div>
     <nav class="navbar">
         <div class="nav-container">
           <a href="index.html" class="logo">
@@ -51,7 +54,7 @@
           width="50%" 
           height="120" 
           frameborder="0" 
-          allow="autoplay">
+          allow="noautoplay">
         </iframe>
       </section>
       
@@ -80,7 +83,14 @@
         <p>&copy; 2025 Lo Mejor de River. Todos los derechos reservados.</p>
         <p>By Alexis Anzotegui</p>
     </footer>
-
+    <script>
+      window.addEventListener('scroll', function () {
+        const banda = document.querySelector('.banda-parallax');
+        const offset = window.scrollY * 1; // Ajustá velocidad
+        banda.style.transform = `translateY(${offset}px) rotate(-20deg)`;
+      });
+    </script>
+    
 </body>
 </html>
 
